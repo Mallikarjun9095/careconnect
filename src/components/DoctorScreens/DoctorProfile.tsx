@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { FaUserFriends, FaHeartbeat, FaStar } from 'react-icons/fa'; 
 import doctorimgfemale from '../../assets/images/doctorimgfemale.png';
 import doctorimgmale from '../../assets/images/doctorimgmale.jpg';
-import { DoctorIDgetDeatiles } from '../../apiRequest/PatientgetDeatiles';
+import { PatientgetDeatiles } from '../../apiRequest/PatientgetDeatiles';
 
 
 const DoctorProfile = () => {
@@ -32,7 +32,7 @@ const DoctorProfile = () => {
   useEffect(() => {
     const fetchDoctorDetails = async () => {
       try {
-        const response = await DoctorIDgetDeatiles(doctorId);
+        const response = await doctorDetails(doctorId);
         setDoctorDetails(response.data);
       } catch (error) {
         console.error('Error fetching doctor details:', error);

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Box, Paper, Tabs, Tab, TextField, Button, Typography, Alert } from '@mui/material';
 import ReactQuill from 'react-quill';
@@ -309,7 +309,7 @@ const DoctorUpdateForm = () => {
               <Grid size={{ xs: 12 }}>
                 <ReactQuill
                   value={formData.bio}
-                  onChange={(bio) => setFormData({ ...formData, bio })}
+                  onChange={(bio: any) => setFormData({ ...formData, bio })}
                   placeholder="Write a short bio..."
                 />
               </Grid>

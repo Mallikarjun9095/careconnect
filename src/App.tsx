@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -48,6 +48,7 @@ import PageNotFound from './components/PageNotFound';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import theme from './utils/theme';
 import AdminLayout from './layouts/adminlayout';
+
 
 
 function App() {

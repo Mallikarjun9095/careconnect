@@ -1,0 +1,137 @@
+.register-input {
+    background-color: transparent;
+    height: 20px;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: left;
+    /* opacity: .5; */
+    color: "#000000";
+    border: 0;
+    width: 80%;
+    
+}
+
+.register-input:focus {
+    outline: none;
+}
+
+.pincode-input-box:focus {
+    outline: none;
+}
+
+.register-input::-webkit-input-placeholder {
+    opacity: .5;
+  }
+
+  .pincode-input-box {
+    background-color: transparent;
+    height: 20px;
+    padding: 5px 5px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    /* opacity: .5; */
+    color: "#000000";
+    border: 1px solid #C4C4C4;
+    width: 80%;
+    border-radius: 6px;
+
+
+  }
+
+  /* Apply to all scrollbars */
+.reg-form-form-ele::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.reg-form-form-ele::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+/* Handle */
+.reg-form-form-ele::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+}
+
+/* Handle on hover */
+.reg-form-form-ele::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .otp-input {
+    width: 41px;
+    height: 42px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .slick-slide img {
+    width: 100%;
+    display: block;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    color: black;
+  }
+  .slick-prev, .slick-next {
+    z-index: 1; /* Ensure they appear over the image */
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
+  
+  .slick-prev {
+    left: -120px; /* Move left arrow outside the slider */
+  }
+  
+  .slick-next {
+    right: -120px; /* Move right arrow outside the slider */
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 30px; /* Make the arrows larger if needed */
+    color: #fff; /* Arrow color */
+  }
+  .slick-dots li button:before {
+    font-size: 12px;   /* Size of the dots */
+    color: gray;       /* Default dot color */
+    opacity: 1;        /* Make sure the dots are fully opaque */
+  }
+  
+  /* Change the active dot color */
+  .slick-dots li.slick-active button:before {
+    color:#ebf8f7;    /* Color for the active dot */
+  }
+  .custom-textfield .MuiOutlinedInput-root {
+    border-radius: 0; /* Optional, to remove rounding on edges */
+}
+
+.custom-textfield .MuiOutlinedInput-notchedOutline {
+    border: none; /* Remove all borders */
+    border-bottom: 2px solid #c4c4c4; /* Add bottom border only */
+}
+
+.custom-textfield .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-bottom: 2px solid #c4c4c4; /* Hover effect */
+}
+
+.custom-textfield .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-bottom: 2px solid #c4c4c4; /* Focus effect */
+}
